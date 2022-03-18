@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+   
+</head>
+
+<style>
+    .container{
+  display:grid;
+  width:1450px;
+  height:1500px;
+
+
+margin: auto;
+  grid-template-areas:
+  "navbar navbar navbar navbar navbar navbar"
+  "section section  section section section section"
+  "box1 box1 box1 box2 box2 box2"
+  "left left center center right right"     
+   "footer footer footer footer footer footer"
+
+}
+.item{
+ color:rgb(223, 241, 223);
+ background-color:#9ADCFF;
+
+}
+#navbar{
+grid-area: navbar;
+width: auto;
+height:820px;
+position: sticky;
+top:0;
+
+background-color: #461111;
+
+
+}
+#section{
+grid-area:section;
+height:850px;
+
+width:1450px;
+}
+
+#left{
+ grid-area: left;
+ height:390px;
+ background-color:#603601;
+ width: 483.33px;
+}
+#right{
+ grid-area: right;
+ height:390px;
+ width: 483.33px;
+ background-color:#603601;
+}
+#center{
+  grid-area: center;
+  height:390px;
+  width: 483.33px;
+  background-color:#CC9544;
+
+}
+#box1{
+  grid-area:box1;
+  height: 300px;
+  
+background-image: url("33.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+width: 725px;
+}
+#box2{
+  grid-area:box2;
+  height: 300px;
+  background-color: #362706;
+  width:725px;
+ 
+  
+}
+#footer{
+  grid-area:footer;
+  height:50px;
+  background-color: #151D3B;
+  width:1450px;
+ position: sticky;
+  bottom: 0;
+  padding:5px 15px 5px 15px;
+}
+.nav-bar{
+          list-style: none;
+          
+
+ overflow: auto;
+          
+       }
+       .nav-bar li{
+           float: right;
+       }
+       .nav-bar li a{
+           font-size:25px;
+           color: white;
+          text-decoration: none;
+          padding: 10px 30px;
+          display:block;
+          
+       }
+       .nav-bar li a:hover{
+           color:tomato;
+           transform: scale(1,2);
+       }
+       #video{
+        
+           height: 820px;
+         
+           
+           
+       }  h2{
+   text-align: center;
+       }
+       .text{
+           position: absolute;
+       }
+   
+
+</style>
+
+<body>
+    <div class="container">
+       
+        <div id="navbar" class="item">
+           
+         
+              <ul class="nav-bar"> 
+      
+                      <li><a href="booking.html">Booking</a></li>   
+           <li><a href="contact.html">Contact US</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About US</a></li>
+            <li><a href="home.html">Home</a></li>
+            
+            </ul>   
+             
+                  
+       
+      
+        <div id="section" class="item">
+                <video autoplay loop muted id="video">
+                    <source src="v.mp4" type="video/mp4">
+                    </video>
+               <div class="text">
+                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                       Esse error voluptatum placeat quas delectus quis sit consectetur, 
+                       doloremque assumenda debitis libero id fugiat? Explicabo optio repudiandae atque fugit omnis quaerat</p>.
+               </div>
+               
+                   
+        </div>
+        <div id="footer" class="item">
+            <h2 class="ff">
+                hotel Niwaas @2022 All Rights Reserved
+            </h2>
+      </div>
+    </div>
+</body>
+</html>
